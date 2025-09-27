@@ -8,8 +8,8 @@ public class FadeScript : MonoBehaviour
     public bool changeRealities = true;
 
     public OVRPassthroughLayer passthrough = null;   // MR passthrough layer
-    public Renderer[] fadingObjects = null;          // Objects visible in MR only
-    public Renderer[] appearingObjects = null;       // Objects that fade in when MR fades out
+    public List<Renderer> fadingObjects = null;          // Objects visible in MR only
+    public List<Renderer> appearingObjects = null;       // Objects that fade in when MR fades out
 
     public float duration = 2f;
 
