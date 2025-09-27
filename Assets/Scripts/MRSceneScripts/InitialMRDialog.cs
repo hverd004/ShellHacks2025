@@ -7,7 +7,8 @@ using UnityEngine;
 public class InitialMRDialog : MonoBehaviour
 {
     public TextMeshProUGUI textfield = null;
-
+    public AudioSource audiosource = null;
+    public AudioClip[] audioclips = null;
     Coroutine runsub = null;
     // Start is called before the first frame update
     void Start()
@@ -17,18 +18,22 @@ public class InitialMRDialog : MonoBehaviour
     IEnumerator runSubtitles()
     {
         yield return new WaitForSeconds(1);
+        audiosource.clip = audioclips[0];
+        audiosource.Play();
         textfield.text = "Oh, a new adventurer!";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         textfield.text = "Welcome!";
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.2f);
         textfield.text = "As your Dungeon Master";
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.4f);
         textfield.text = "I've crafted an epic campaign for your enjoyment.";
-        yield return new WaitForSeconds(6);
-        textfield.text = "To begin, choose the weapon that speaks to you the most.";
+        yield return new WaitForSeconds(4);
+        textfield.text = "To begin, choose the weapon that speaks to you most.";
         yield return new WaitForSeconds(15);
+        audiosource.clip = audioclips[1];
+        audiosource.Play();
         textfield.text = "I'll wait...";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
         textfield.text = "";
     }
 
@@ -39,12 +44,13 @@ public class InitialMRDialog : MonoBehaviour
             StopCoroutine(runsub);
             runsub = null;
         }
+        audiosource.clip = audioclips[2];
         yield return new WaitForSeconds(1);
         textfield.text = "Ah, A sword, a true classic";
         yield return new WaitForSeconds(3);
         textfield.text = "best fitting of a hero";
         yield return new WaitForSeconds(2);
-        textfield.text = "now let’s begin";
+        textfield.text = "now let's begin";
         yield return new WaitForSeconds(3);
         textfield.text = "";
         f.MRtoVRMethod();
@@ -63,7 +69,7 @@ public class InitialMRDialog : MonoBehaviour
         yield return new WaitForSeconds(3);
         textfield.text = "may your hits be critical";
         yield return new WaitForSeconds(2);
-        textfield.text = "now let’s begin";
+        textfield.text = "now letï¿½s begin";
         yield return new WaitForSeconds(3);
         textfield.text = "";
         f.MRtoVRMethod();
@@ -82,7 +88,7 @@ public class InitialMRDialog : MonoBehaviour
         yield return new WaitForSeconds(3);
         textfield.text = "you must be quick witted";
         yield return new WaitForSeconds(2);
-        textfield.text = "and with that let’s begin";
+        textfield.text = "and with that letï¿½s begin";
         yield return new WaitForSeconds(4);
         textfield.text = "";
         f.MRtoVRMethod();
