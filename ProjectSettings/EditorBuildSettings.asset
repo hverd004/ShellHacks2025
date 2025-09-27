@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MR Scene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Void World.unity
+    guid: b34899b6f445fcb4ba55e083791048fd
+  - enabled: 1
+    path: Assets/Scenes/VR Tavern.unity
+    guid: cb38729003801ed44abb3636984012be
+  - enabled: 1
+    path: Assets/Scenes/VR Witch Outdoors.unity
+    guid: 45832b2503bb9db488dcc5dbe3f4cd17
+  - enabled: 1
+    path: Assets/Scenes/VR Witch Indoors.unity
+    guid: a8ce8f5e6ea8e6644993ce2b1037403d
+  - enabled: 1
+    path: Assets/Scenes/VR Demon World.unity
+    guid: b92ad88574984a54ea5cdd2316d3e493
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: af7870569d5d96d40b82a8b3a0d15336, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4a3901e196dffa54c9103ca2b63e9cbd, type: 2}
