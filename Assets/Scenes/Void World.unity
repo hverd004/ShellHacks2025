@@ -1245,7 +1245,10 @@ MonoBehaviour:
   cam: {fileID: 2142301465}
   changeRealities: 1
   passthrough: {fileID: 0}
-  fadingObjects: []
+  fadingObjects:
+  - {fileID: 1592107658}
+  - {fileID: 1592107657}
+  - {fileID: 1592107656}
   appearingObjects: []
   duration: 2
 --- !u!114 &1840699712
