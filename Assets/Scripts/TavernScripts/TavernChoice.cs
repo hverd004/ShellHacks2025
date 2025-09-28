@@ -10,7 +10,12 @@ public class RegisterThreat : MonoBehaviour
         if (other.gameObject.CompareTag("Weapon"))
         {
             Debug.Log("threaten");
-            StartCoroutine(td.ThreatChosen());
+            td.loadThreats();
+        }
+        else if (other.gameObject.CompareTag("Bottle"))
+        {
+            Debug.Log("Talk");
+            td.loadBottles();
         }
     }
 }
