@@ -901,8 +901,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textfield: {fileID: 1816617401}
-  audiosource: {fileID: 0}
-  audioclips: []
+  audiosource: {fileID: 373128677}
+  audioclips:
+  - {fileID: 8300000, guid: 4e16f1461feb7fd43b01210a72bb87d2, type: 3}
+  - {fileID: 8300000, guid: 7b20c291585563c408318cc16e682fbb, type: 3}
+  - {fileID: 8300000, guid: 67dab6d15114267488294586ac1ffc3a, type: 3}
 --- !u!82 &373128677
 AudioSource:
   m_ObjectHideFlags: 0
@@ -914,7 +917,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
