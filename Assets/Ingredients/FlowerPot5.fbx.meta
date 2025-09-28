@@ -3,7 +3,32 @@ guid: c5e3b686470ca8d4882f0944786acd87
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CactusFlowerPot5.001
+    second: {fileID: 2100000, guid: 08077f35411559548b76c67997c456a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlowerFlowerPot5.001
+    second: {fileID: 2100000, guid: eafa01e75da814b4194b3ffb17b0c0d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GoldFlowerPot5.001
+    second: {fileID: 2100000, guid: 5206e8d872a08e7429824f2cea2329c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GroundFlowerPot5.001
+    second: {fileID: 2100000, guid: 621d5991d3104a545812cdefbdfe5738, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VaseFlowerPot5.001
+    second: {fileID: 2100000, guid: a8ae606a677a9404aa378084a79030ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
