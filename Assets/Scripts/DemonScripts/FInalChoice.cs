@@ -12,14 +12,18 @@ public class FInalChoice : MonoBehaviour
         if (other.gameObject.CompareTag("Weapon") && !good)
         {
             Destroy(other.gameObject);
+            ENDINGS.ending = 2;
             SceneManager.LoadScene(6);
         }
         else if (other.gameObject.CompareTag("Weapon") && good)
         {
+            Destroy(other.gameObject);
+            ENDINGS.ending = 1;
             SceneManager.LoadScene(6);
         }
         else if (other.gameObject.CompareTag("Pie"))
         {
+            ENDINGS.ending = 0;
             d.pieDemon();
         }
     }

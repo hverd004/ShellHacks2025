@@ -6494,6 +6494,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 283102276}
   m_SourcePrefab: {fileID: 100100000, guid: 89138d50ab9736b41afedbcade81abc5, type: 3}
+--- !u!199 &1394157866 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 5770470702160969865, guid: 89138d50ab9736b41afedbcade81abc5, type: 3}
+  m_PrefabInstance: {fileID: 1394157865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1411366023 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 00553c8cec1c8c3449d6a7a9a737b7dc, type: 3}
@@ -8133,6 +8138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691445255}
   - component: {fileID: 1691445254}
+  - component: {fileID: 1691445258}
   - component: {fileID: 1691445256}
   - component: {fileID: 1691445257}
   m_Layer: 0
@@ -8302,7 +8308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeIn: {fileID: 1691445254}
-  fadeOut: {fileID: 0}
+  fadeOut: {fileID: 1691445258}
   textfield: {fileID: 1619319263}
   audiosource: {fileID: 1691445257}
   audioclips:
@@ -8408,6 +8414,132 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1691445258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691445253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a176d5a2a74e45a4a94d88bdace3cdf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1649493177}
+  changeRealities: 1
+  passthrough: {fileID: 0}
+  fadingObjects:
+  - {fileID: 831963518}
+  - {fileID: 106845814}
+  - {fileID: 1271779110}
+  - {fileID: 362683588}
+  - {fileID: 1196310939}
+  - {fileID: 644707944}
+  - {fileID: 1623902318}
+  - {fileID: 1625057850}
+  - {fileID: 2008608431}
+  - {fileID: 2017638502}
+  - {fileID: 908886507}
+  - {fileID: 2057205973}
+  - {fileID: 1289043212}
+  - {fileID: 1745978185}
+  - {fileID: 639109542}
+  - {fileID: 427484276}
+  - {fileID: 1635300126}
+  - {fileID: 1302571104}
+  - {fileID: 1294692150}
+  - {fileID: 1572952016}
+  - {fileID: 675047526}
+  - {fileID: 1776119874}
+  - {fileID: 611750284}
+  - {fileID: 1566547945}
+  - {fileID: 1161846766}
+  - {fileID: 2092049279}
+  - {fileID: 74953373}
+  - {fileID: 695599373}
+  - {fileID: 1816493764}
+  - {fileID: 1380322973}
+  - {fileID: 2115998515}
+  - {fileID: 1167068372}
+  - {fileID: 1944246340}
+  - {fileID: 1623824272}
+  - {fileID: 1917074804}
+  - {fileID: 1517327843}
+  - {fileID: 1957474694}
+  - {fileID: 917766528}
+  - {fileID: 1194136001}
+  - {fileID: 429623788}
+  - {fileID: 351564991}
+  - {fileID: 1021947963}
+  - {fileID: 1425768956}
+  - {fileID: 1208528198}
+  - {fileID: 751970241}
+  - {fileID: 1833341005}
+  - {fileID: 2147246711}
+  - {fileID: 1746186818}
+  - {fileID: 1721883030}
+  - {fileID: 1278954464}
+  - {fileID: 1865357831}
+  - {fileID: 1919773562}
+  - {fileID: 2025736468}
+  - {fileID: 338038498}
+  - {fileID: 1667097704}
+  - {fileID: 1953044271}
+  - {fileID: 415144280}
+  - {fileID: 1924362665}
+  - {fileID: 802623114}
+  - {fileID: 963166868}
+  - {fileID: 1391320482}
+  - {fileID: 1445032728}
+  - {fileID: 1411366023}
+  - {fileID: 2129319659}
+  - {fileID: 1504231119}
+  - {fileID: 1655640250}
+  - {fileID: 1815252174}
+  - {fileID: 1366998028}
+  - {fileID: 1557873019}
+  - {fileID: 1905283561}
+  - {fileID: 1841414012}
+  - {fileID: 976050633}
+  - {fileID: 2011697746}
+  - {fileID: 1600857934}
+  - {fileID: 599631434}
+  - {fileID: 1440734386}
+  - {fileID: 755021158}
+  - {fileID: 1445273433}
+  - {fileID: 2020727976}
+  - {fileID: 2015762839}
+  - {fileID: 2122752696}
+  - {fileID: 1317801672}
+  - {fileID: 1992215865}
+  - {fileID: 593016906}
+  - {fileID: 1320019923}
+  - {fileID: 1436410406}
+  - {fileID: 1013533744}
+  - {fileID: 1830783654}
+  - {fileID: 2123146465}
+  - {fileID: 351834169}
+  - {fileID: 1593951431}
+  - {fileID: 2109276085}
+  - {fileID: 2029202435}
+  - {fileID: 1056406874}
+  - {fileID: 1995103600}
+  - {fileID: 1915128981}
+  - {fileID: 1112935800}
+  - {fileID: 796223408}
+  - {fileID: 1372486692}
+  - {fileID: 1501993241}
+  - {fileID: 1347932764}
+  - {fileID: 57767469}
+  - {fileID: 1482277460}
+  - {fileID: 721363280}
+  - {fileID: 1615340564}
+  - {fileID: 1394157866}
+  - {fileID: 2141943799}
+  - {fileID: 303130441}
+  appearingObjects: []
+  duration: 4
 --- !u!1001 &1713849944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10636,6 +10768,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8, y: 0.3, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!199 &2141943799 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 5770470702160969865, guid: 89138d50ab9736b41afedbcade81abc5, type: 3}
+  m_PrefabInstance: {fileID: 2141943796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2141943802
 MonoBehaviour:
   m_ObjectHideFlags: 0

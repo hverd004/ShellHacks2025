@@ -64,7 +64,7 @@ public class DemonSceneScript : MonoBehaviour
     public void pieDemon()
     {
         iderator.SetActive(false);
-        iderator.SetActive(false);
+        iderator2.SetActive(false);
         StartCoroutine(DemonPie());
     }
     public IEnumerator DemonPie()

@@ -675,6 +675,7 @@ MonoBehaviour:
   audioclips:
   - {fileID: 8300000, guid: ecec7e3c9a523674090817a61e410116, type: 3}
   - {fileID: 8300000, guid: b12b0caa04336b4418250efd31a85942, type: 3}
+  - {fileID: 8300000, guid: c8e97278d26eece44b34cd668ec00d10, type: 3}
 --- !u!4 &672829914
 Transform:
   m_ObjectHideFlags: 0

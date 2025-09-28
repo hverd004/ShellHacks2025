@@ -768,6 +768,7 @@ MonoBehaviour:
   - {fileID: 145910924151707000}
   - {fileID: 1861772040671406873}
   - {fileID: 423335326}
+  - {fileID: 1874903049}
   duration: 3
 --- !u!4 &474687770
 Transform:
@@ -1334,6 +1335,7 @@ MonoBehaviour:
   - {fileID: 145910924151707000}
   - {fileID: 1861772040671406873}
   - {fileID: 423335326}
+  - {fileID: 1874903049}
   appearingObjects: []
   duration: 3
 --- !u!1 &507737163
@@ -5276,6 +5278,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b182395c0b6744a920c74bce3ece13, type: 3}
+--- !u!137 &1874903049 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3963614404851379811, guid: 64b182395c0b6744a920c74bce3ece13, type: 3}
+  m_PrefabInstance: {fileID: 1874903048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1895288190
 GameObject:
   m_ObjectHideFlags: 0

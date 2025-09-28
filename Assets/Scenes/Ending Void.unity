@@ -415,68 +415,6 @@ Transform:
   - {fileID: 1738605047}
   m_Father: {fileID: 1660375615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &416198594
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 33.26
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_Name
-      value: DM vivi
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 7869873546869171050, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99eb3e24db169974f954f9ffda1c690f, type: 3}
 --- !u!1 &520484406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1598298720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1418,7 @@ GameObject:
   - component: {fileID: 1840699709}
   - component: {fileID: 1840699708}
   - component: {fileID: 1840699711}
+  - component: {fileID: 1840699714}
   - component: {fileID: 1840699713}
   m_Layer: 0
   m_Name: Fader
@@ -1641,6 +1580,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1840699714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840699707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a5298c3488a84080d7a3d652bb00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textfield: {fileID: 520484408}
+  audiosource: {fileID: 1840699713}
+  audioclips:
+  - {fileID: 8300000, guid: ecec7e3c9a523674090817a61e410116, type: 3}
+  - {fileID: 8300000, guid: b12b0caa04336b4418250efd31a85942, type: 3}
+  - {fileID: 8300000, guid: c8e97278d26eece44b34cd668ec00d10, type: 3}
+  f: {fileID: 1840699708}
 --- !u!1 &1901035964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,7 +1848,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1649290792}
   - {fileID: 1598298724}
-  - {fileID: 416198594}
   - {fileID: 1840699709}
   - {fileID: 1592107655}
   - {fileID: 285174756}

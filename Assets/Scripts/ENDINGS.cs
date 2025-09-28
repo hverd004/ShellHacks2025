@@ -11,18 +11,22 @@ public class ENDINGS : MonoBehaviour
     public TextMeshProUGUI textfield = null;
     public AudioSource audiosource = null;
     public AudioClip[] audioclips = null;
+    public FadeScript f = null;
     private void Start()
     {
         if (ending == 0)
         {
+            f.VRtoVRMethod();
             StartCoroutine(ending1());
         }
         else if (ending == 1)
         {
+            f.VRtoVRMethod();
             StartCoroutine(ending2());
         }
         else if(ending == 2)
         {
+            f.VRtoVRMethod();
             StartCoroutine(ending3());
         }
     }
@@ -63,22 +67,22 @@ public class ENDINGS : MonoBehaviour
     }
     IEnumerator ending3()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         audiosource.clip = audioclips[2];
         audiosource.Play();
         textfield.text = "HOLD UP. THAT’S NOT HOW YOU PLAY THE GAME";
-        yield return new WaitForSeconds(5f);
-        textfield.text = "WHY WOULD YOU DO THAT? THIS WHOLE JOURNEY";
-        yield return new WaitForSeconds(5);
-        textfield.text = "JUST TO JOIN THE BIG BAD AT THE END";
-        yield return new WaitForSeconds(4);
-        textfield.text = "THIS IS NOT HOW YOU PLAY A HERO";
-        yield return new WaitForSeconds(4);
-        textfield.text = "YOU SHOULD BE ASHAMED YOU… YOU VILLAN";
         yield return new WaitForSeconds(4f);
+        textfield.text = "WHY WOULD YOU DO THAT? THIS WHOLE JOURNEY";
+        yield return new WaitForSeconds(2.8f);
+        textfield.text = "JUST TO JOIN THE BIG BAD AT THE END";
+        yield return new WaitForSeconds(2.8f);
+        textfield.text = "THIS IS NOT HOW YOU PLAY A HERO";
+        yield return new WaitForSeconds(2.8f);
+        textfield.text = "YOU SHOULD BE ASHAMED YOU… YOU VILLAN";
+        yield return new WaitForSeconds(2.8f);
         textfield.text = "What a waste of a perfectly good campaign";
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         textfield.text = "Begone you menace";
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
     }
 }
