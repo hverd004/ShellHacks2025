@@ -55,14 +55,14 @@ public class DemonSceneScript : MonoBehaviour
         audiosource.clip = audioclips[2];
         audiosource.Play();
         textfield.text = "A pie? Are we serious? You came all this way just to give me a pie.";
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(8f);
         textfield.text = "You know, now that I think about it.";
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4f);
         textfield.text = "I’ve lived for centuries and you, hero, are the first to ever get me a gift. ";
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(6f);
         textfield.text = "Perhaps I should reevaluate my stance on humanity.";
-
-
+        yield return new WaitForSeconds(5f);
+        textfield.text = "";
 
     }
 }
