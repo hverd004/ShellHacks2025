@@ -17,7 +17,7 @@ public class InitialMRDialog : MonoBehaviour
     }
     IEnumerator runSubtitles()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         audiosource.clip = audioclips[0];
         audiosource.Play();
         textfield.text = "Oh, a new adventurer!";
