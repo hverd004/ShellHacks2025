@@ -8,12 +8,10 @@ using UnityEngine.UIElements;
 public class TavernDialog : MonoBehaviour
 {
     public FadeScript fadeIn = null;
+    public FadeScript fadeOut = null;
     public TextMeshProUGUI textfield = null;
     public AudioSource audio = null;
     public AudioClip[] clips = null;
-
-    public GameObject fireOp1 = null;
-    public GameObject fireOp2 = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,12 +51,41 @@ public class TavernDialog : MonoBehaviour
         textfield.text = "I’m not here to talk with people like you";
         yield return new WaitForSeconds(3);
         textfield.text = "";
-        activatechoices();
     }
 
-    void activatechoices()
+
+    public IEnumerator BottleChosen()
     {
-        fireOp1.SetActive(true);
-        fireOp2.SetActive(true);
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[2];
+        audio.Play();
+        textfield.text = "Alright, now we’re getting somewhere!";
+        yield return new WaitForSeconds(4);
+        textfield.text = "Let me guess, you're gonna ask about those demons arent you";
+        yield return new WaitForSeconds(3.5f);
+        textfield.text = "Every one of you heroes always want the same thing.";
+        yield return new WaitForSeconds(4);
+        textfield.text = "Sorry I don’t know much, but I do believe";
+        yield return new WaitForSeconds(3f);
+        textfield.text = "there is a witch a town over who might be able to help you";
+        yield return new WaitForSeconds(4);
+        textfield.text = "If it makes you feel better you can have this pie";
+        yield return new WaitForSeconds(2f);
+        textfield.text = "a gift from me to you for your patronage";
+        yield return new WaitForSeconds(4);
+        textfield.text = "";
+    }
+
+    public IEnumerator ThreatChosen()
+    {
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[2];
+        audio.Play();
+        textfield.text = "";
+        yield return new WaitForSeconds(4);
+        textfield.text = "";
+        yield return new WaitForSeconds(4.5f);
+        textfield.text = "";
+        yield return new WaitForSeconds(3f);
     }
 }
