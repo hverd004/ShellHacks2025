@@ -42,16 +42,18 @@ public class InitialMRDialog : MonoBehaviour
         if(runsub != null)
         {
             StopCoroutine(runsub);
+            audiosource.Stop();
             runsub = null;
         }
-        audiosource.clip = audioclips[2];
         yield return new WaitForSeconds(1);
+        audiosource.clip = audioclips[2];
+        audiosource.Play();
         textfield.text = "Ah, A sword, a true classic";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3.5f);
         textfield.text = "best fitting of a hero";
         yield return new WaitForSeconds(2);
         textfield.text = "now let's begin";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3.5f);
         textfield.text = "";
         f.MRtoVRMethod();
         StartCoroutine(mw.loadNextScene());
@@ -62,14 +64,17 @@ public class InitialMRDialog : MonoBehaviour
         if (runsub != null)
         {
             StopCoroutine(runsub);
+            audiosource.Stop();
             runsub = null;
         }
         yield return new WaitForSeconds(1);
+        audiosource.clip = audioclips[3];
+        audiosource.Play();
         textfield.text = "Ah, A battle axe,";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.5f);
         textfield.text = "may your hits be critical";
         yield return new WaitForSeconds(2);
-        textfield.text = "now let�s begin";
+        textfield.text = "now let's begin";
         yield return new WaitForSeconds(3);
         textfield.text = "";
         f.MRtoVRMethod();
@@ -81,14 +86,17 @@ public class InitialMRDialog : MonoBehaviour
         if (runsub != null)
         {
             StopCoroutine(runsub);
+            audiosource.Stop();
             runsub = null;
         }
         yield return new WaitForSeconds(1);
+        audiosource.clip = audioclips[4];
+        audiosource.Play();
         textfield.text = "Ah, A dagger";
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         textfield.text = "you must be quick witted";
         yield return new WaitForSeconds(2);
-        textfield.text = "and with that let�s begin";
+        textfield.text = "and with that let's begin";
         yield return new WaitForSeconds(4);
         textfield.text = "";
         f.MRtoVRMethod();
