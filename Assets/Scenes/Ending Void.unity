@@ -735,28 +735,6 @@ MonoBehaviour:
   installationRoutineCheckpoint:
     _installationRoutineId: 2063f481-1b63-4eda-9ee8-a00df98536bc
     _installationVariants: []
---- !u!114 &526694557 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2918970296110853521, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
-  m_PrefabInstance: {fileID: 526694553}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb743c666c1ab34e928a0b62c2fa862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &526694558 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1232386753682569213, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
-  m_PrefabInstance: {fileID: 526694553}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb743c666c1ab34e928a0b62c2fa862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &763529601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,8 +1480,6 @@ GameObject:
   - component: {fileID: 1840699709}
   - component: {fileID: 1840699708}
   - component: {fileID: 1840699711}
-  - component: {fileID: 1840699710}
-  - component: {fileID: 1840699712}
   - component: {fileID: 1840699713}
   m_Layer: 0
   m_Name: Fader
@@ -1548,26 +1524,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840699710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840699707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535e0cd89d9c8394d945f15629ac29b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeIn: {fileID: 1840699708}
-  fadeOut: {fileID: 1840699711}
-  g: {fileID: 526694558}
-  g2: {fileID: 526694557}
-  textfield: {fileID: 520484408}
-  audio: {fileID: 1840699713}
-  audioClips:
-  - {fileID: 8300000, guid: 7e684107a0b342c44bcba0e5a0380c40, type: 3}
 --- !u!114 &1840699711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,18 +1545,6 @@ MonoBehaviour:
   - {fileID: 1592107656}
   appearingObjects: []
   duration: 3
---- !u!114 &1840699712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840699707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0a17407efc2df4c8658e0fd53322fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1840699713
 AudioSource:
   m_ObjectHideFlags: 0

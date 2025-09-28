@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class WitchOutdoorDialog : MonoBehaviour
@@ -79,7 +80,22 @@ public class WitchOutdoorDialog : MonoBehaviour
         interactor.SetActive(true);
     }
 
-    public IEnumerator outdoorWitchPie()
+    public void outdoorpiewitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchPie());
+    }
+    public void outdoorknockwitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchKnock());
+    }
+    public void outdoorhitwitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchMenace());
+    }
+    IEnumerator outdoorWitchPie()
     {
         yield return new WaitForSeconds(1);
         audio.clip = clips[3];
@@ -93,9 +109,12 @@ public class WitchOutdoorDialog : MonoBehaviour
         textfield.text = "Come in, and bring that pie with you.";
         yield return new WaitForSeconds(2.25f);
         textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(4);
     }
 
-    public IEnumerator outdoorWitchKnock()
+    IEnumerator outdoorWitchKnock()
     {
         yield return new WaitForSeconds(1);
         audio.clip = clips[4];
@@ -109,12 +128,15 @@ public class WitchOutdoorDialog : MonoBehaviour
         textfield.text = "Let’s make this quick";
         yield return new WaitForSeconds(2f);
         textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(4);
     }
 
-    public IEnumerator outdoorWitchMenace()
+    IEnumerator outdoorWitchMenace()
     {
         yield return new WaitForSeconds(1);
-        audio.clip = clips[0];
+        audio.clip = clips[5];
         audio.Play();
         textfield.text = "MY DOOR?";
         yield return new WaitForSeconds(1.5f);
@@ -125,5 +147,8 @@ public class WitchOutdoorDialog : MonoBehaviour
         textfield.text = "Let’s see how tough you are when the demons’ rip you to shreds!";
         yield return new WaitForSeconds(6f);
         textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(5);
     }
 }

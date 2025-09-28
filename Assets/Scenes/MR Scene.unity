@@ -1722,7 +1722,7 @@ MonoBehaviour:
   - {fileID: 8408403550811006167}
   - {fileID: 500202864}
   appearingObjects: []
-  duration: 2
+  duration: 3
 --- !u!4 &857334368
 Transform:
   m_ObjectHideFlags: 0

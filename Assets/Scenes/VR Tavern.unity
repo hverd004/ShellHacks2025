@@ -768,7 +768,7 @@ MonoBehaviour:
   - {fileID: 145910924151707000}
   - {fileID: 1861772040671406873}
   - {fileID: 423335326}
-  duration: 2
+  duration: 3
 --- !u!4 &474687770
 Transform:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   - {fileID: 1861772040671406873}
   - {fileID: 423335326}
   appearingObjects: []
-  duration: 2
+  duration: 3
 --- !u!1 &507737163
 GameObject:
   m_ObjectHideFlags: 0
