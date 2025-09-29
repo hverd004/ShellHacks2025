@@ -3,15 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Weapon
+  - Bottle
+  - Pie
+  - Newt
+  - Ogre
+  - Salt
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Paper
   - Water
   - UI
-  - 
+  - Overlay UI
   - 
   - 
   - 
