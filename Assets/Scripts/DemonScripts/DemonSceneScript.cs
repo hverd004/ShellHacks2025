@@ -2,18 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DemonSceneScript : MonoBehaviour
 {
     public FadeScript fadeIn = null;
+    public FadeScript fadeOut = null;
     public TextMeshProUGUI textfield = null;
     public AudioSource audiosource = null;
     public AudioClip[] audioclips = null;
     Coroutine runsub = null;
+    public GameObject iderator = null;
+    public GameObject iderator2 = null;
+    public static bool pie = true;
+    public GameObject p = null;
     // Start is called before the first frame update
     void Start()
     {
-        runsub = StartCoroutine(DemonPie());
+        if (pie)
+        {
+            p.SetActive(true);
+        }
+        fadeIn.VRtoVRMethod();
+        StartCoroutine(runSubtitles());
     }
     IEnumerator runSubtitles()
     {
@@ -32,7 +43,7 @@ public class DemonSceneScript : MonoBehaviour
         audiosource.clip = audioclips[1];
         audiosource.Play();
         textfield.text = "Another foolish hero at my door, another life thrown away trying to oppose me.";
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         textfield.text = " I will admit, it’s impressive you’ve made it this far.";
         yield return new WaitForSeconds(4f);
         textfield.text = "Very few have walked these halls with the intent to kill me.";
@@ -46,9 +57,16 @@ public class DemonSceneScript : MonoBehaviour
         textfield.text = "Oppose me, and you’ll die in vain like all the others.";
         yield return new WaitForSeconds(6);
         textfield.text = "";
-        
+        iderator.SetActive(true);
+        iderator2.SetActive(true);
     }
 
+    public void pieDemon()
+    {
+        iderator.SetActive(false);
+        iderator2.SetActive(false);
+        StartCoroutine(DemonPie());
+    }
     public IEnumerator DemonPie()
     {
         yield return new WaitForSeconds(2);
@@ -63,6 +81,9 @@ public class DemonSceneScript : MonoBehaviour
         textfield.text = "Perhaps I should reevaluate my stance on humanity.";
         yield return new WaitForSeconds(5f);
         textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(6);
 
     }
 }

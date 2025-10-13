@@ -3,7 +3,37 @@ guid: d6db6732e34468d4e95e5204169d264a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: d33004b1071889d4c80103ddf241ad54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PixPal
+    second: {fileID: 2100000, guid: d7cdee7b43e4ccf409bf342fa5750f5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PixPal1
+    second: {fileID: 2100000, guid: ba61f2670dc7bdd42a10246f5ac72405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PixPal2
+    second: {fileID: 2100000, guid: 80a9ad6a5cada664497498b930232196, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PixPal3
+    second: {fileID: 2100000, guid: 0f319d8720584a2408e7483745b53e78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PixPal4
+    second: {fileID: 2100000, guid: 77caeef0d34086a43bbfa612e056fa62, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

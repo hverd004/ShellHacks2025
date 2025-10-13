@@ -73,7 +73,7 @@ public class TavernDialog : MonoBehaviour
     {
         bottle.SetActive(false);
         selector.SetActive(false);
-        yield return new WaitForSeconds(1);
+        WitchOutdoorDialog.good = true;
         audio.clip = clips[2];
         audio.Play();
         textfield.text = "Alright, now we’re getting somewhere!";
@@ -100,25 +100,23 @@ public class TavernDialog : MonoBehaviour
     {
         bottle.SetActive(false);
         selector.SetActive(false);
-        yield return new WaitForSeconds(1);
+        WitchOutdoorDialog.good = false;
         audio.clip = clips[3];
         audio.Play();
         textfield.text = "What do you think you're doing?";
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1.75f);
         textfield.text = "You're so desperate for information that you'd kill me?";
-        yield return new WaitForSeconds(3.5f);
-        textfield.text = "Fine.";
-        yield return new WaitForSeconds(1);
-        textfield.text = "Rumor has it there is a witch";
-        yield return new WaitForSeconds(3f);
-        textfield.text = "over in the next town who might be able to help you";
-        yield return new WaitForSeconds(4);
-        textfield.text = "Now get out";
         yield return new WaitForSeconds(2f);
-        textfield.text = "Take this pie if you want, i dont care either way";
-        yield return new WaitForSeconds(4);
+        textfield.text = "Fine";
+        yield return new WaitForSeconds(1);
+        textfield.text = "Rumor has it there is a witch over in the next town who might be able to help you";
+        yield return new WaitForSeconds(4.5f);
+        textfield.text = "Now get out";
+        yield return new WaitForSeconds(1.75f);
+        textfield.text = "Take this pie if you want, I dont care either way";
+        yield return new WaitForSeconds(2f);
         textfield.text = "just leave";
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
         textfield.text = "";
         fadeOut.VRtoVRMethod();
         yield return new WaitForSeconds(fadeIn.duration + .5f);

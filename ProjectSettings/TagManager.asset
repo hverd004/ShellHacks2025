@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Weapon
   - Bottle
+  - Pie
+  - Newt
+  - Ogre
+  - Salt
   layers:
   - Default
   - TransparentFX

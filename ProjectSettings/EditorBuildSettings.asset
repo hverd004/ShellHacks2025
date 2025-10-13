@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR Demon World.unity
     guid: b92ad88574984a54ea5cdd2316d3e493
+  - enabled: 1
+    path: Assets/Scenes/Ending Void.unity
+    guid: fba888b9320e40442a49a4a942851fa7
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: af7870569d5d96d40b82a8b3a0d15336, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4a3901e196dffa54c9103ca2b63e9cbd, type: 2}

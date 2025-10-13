@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class WitchOutdoorDialog : MonoBehaviour
@@ -13,6 +14,7 @@ public class WitchOutdoorDialog : MonoBehaviour
     public AudioSource audio = null;
     public AudioClip[] clips = null;
     public static bool good = false;
+    public GameObject interactor = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class WitchOutdoorDialog : MonoBehaviour
         textfield.text = "I knew you could do it";
         yield return new WaitForSeconds(2);
         textfield.text = "";
+        StartCoroutine(outdoorwhichdmstart());
     }
 
     IEnumerator InitialBadWitchDialog()
@@ -50,5 +53,102 @@ public class WitchOutdoorDialog : MonoBehaviour
         textfield.text = "elegant solution but it worked i guess";
         yield return new WaitForSeconds(4);
         textfield.text = "";
+        StartCoroutine(outdoorwhichdmstart());
+    }
+
+    IEnumerator outdoorwhichdmstart()
+    {
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[2];
+        audio.Play();
+        textfield.text = "You now find yourself in front of the witches' hut";
+        yield return new WaitForSeconds(3f);
+        textfield.text = "Although you are excited to be one step closer to your goal";
+        yield return new WaitForSeconds(3f);
+        textfield.text = "the witch doesn't seem to share that excitement";
+        yield return new WaitForSeconds(2.25f);
+        textfield.text = "as she demands you leave her alone";
+        yield return new WaitForSeconds(2.25f);
+        textfield.text = "How do you persuade her to help?";
+        yield return new WaitForSeconds(2);
+        textfield.text = "";
+        loadObjects();
+    }
+
+    void loadObjects()
+    {
+        interactor.SetActive(true);
+    }
+
+    public void outdoorpiewitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchPie());
+    }
+    public void outdoorknockwitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchKnock());
+    }
+    public void outdoorhitwitch()
+    {
+        interactor.SetActive(false);
+        StartCoroutine(outdoorWitchMenace());
+    }
+    IEnumerator outdoorWitchPie()
+    {
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[3];
+        audio.Play();
+        textfield.text = "My pie orb is reacting, you wouldn’t happen to have a pie with you?";
+        yield return new WaitForSeconds(6f);
+        textfield.text = "You do! Well… I suppose I could help you just this once.";
+        yield return new WaitForSeconds(1.25f);
+        textfield.text = "You do! Well... I suppose I could help you just this once.";
+        yield return new WaitForSeconds(2.5f);
+        textfield.text = "Come in, and bring that pie with you.";
+        yield return new WaitForSeconds(2.25f);
+        textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(4);
+    }
+
+    IEnumerator outdoorWitchKnock()
+    {
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[4];
+        audio.Play();
+        textfield.text = "Do you plan on knocking on my door for the whole dang day?";
+        yield return new WaitForSeconds(4.5f);
+        textfield.text = "If I tell you what you want will you leave me alone?";
+        yield return new WaitForSeconds(4f);
+        textfield.text = "Fine, come in";
+        yield return new WaitForSeconds(2f);
+        textfield.text = "Let’s make this quick";
+        yield return new WaitForSeconds(2f);
+        textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(4);
+    }
+
+    IEnumerator outdoorWitchMenace()
+    {
+        yield return new WaitForSeconds(1);
+        audio.clip = clips[5];
+        audio.Play();
+        textfield.text = "MY DOOR?";
+        yield return new WaitForSeconds(1.5f);
+        textfield.text = "Do you know how much a mahogany door costs?";
+        yield return new WaitForSeconds(3.5f);
+        textfield.text = "You think you’re so tough huh?";
+        yield return new WaitForSeconds(3.75f);
+        textfield.text = "Let’s see how tough you are when the demons’ rip you to shreds!";
+        yield return new WaitForSeconds(6f);
+        textfield.text = "";
+        fadeOut.VRtoVRMethod();
+        yield return new WaitForSeconds(fadeIn.duration + .5f);
+        SceneManager.LoadScene(5);
     }
 }
